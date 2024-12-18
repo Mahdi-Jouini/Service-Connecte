@@ -22,11 +22,20 @@ const config = {
   },
 };
 
+const sequelize = new Sequelize(
+  config.database,
+  config.username,
+  config.password,
+  {
+    host: config.host,
+    dialect: config.dialect,
+    dialectOptions: config.dialectOptions,
+  }
+);
+
+
 const db = {};
-const sequelize = new Sequelize(config.database, config.username, config.password, {
-  host: config.host,
-  dialect: config.dialect,
-});
+
 
 fs.readdirSync(__dirname)
   .filter((file) => {
