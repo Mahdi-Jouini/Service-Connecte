@@ -14,6 +14,12 @@ const config = {
   password: process.env.DB_PASSWORD,
   host: process.env.DB_HOST,
   dialect: process.env.DB_DIALECT,
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false, // Necessary for Render's PostgreSQL
+    },
+  },
 };
 
 const db = {};
