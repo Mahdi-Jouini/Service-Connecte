@@ -76,4 +76,4 @@ const createUser = async (req, res) => {
   }
 };
 
-module.exports = { getUserById };
+module.exports = { getUserById , createUser };
