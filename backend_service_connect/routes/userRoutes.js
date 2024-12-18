@@ -2,6 +2,7 @@ const express = require('express');
 
 const verifyAuth = require('../middlewares/verifyAuth');
 const { getUserById } = require('../controllers/userController');
+const { createUser } = require('../controllers/userController');
 
 const router = express.Router();
 
