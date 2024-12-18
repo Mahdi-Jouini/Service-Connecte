@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const axiosConfig = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'https://service-connecte-backend.onrender.com',
 });
 
 
