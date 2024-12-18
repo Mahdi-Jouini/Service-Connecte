@@ -1,0 +1,46 @@
+.rbc-calendar {
+    border-radius: 10px;
+    overflow: hidden;
+    border: #d1c4e9 solid;
+    padding: 3px;
+    /*transform: scale(0.8);*/
+    
+  }
+  .rbc-allday-cell {
+    display: none;
+  }
+  .rbc-time-content{
+    border-top: none;
+  }
+  .rbc-header{
+    border-bottom: none;
+  }
+  .rbc-time-header{
+    border-bottom: 1px solid #dddd;
+  }
+  
+.rbc-timeslot-group{
+    min-height: 30px;
+    max-height: 30px;
+}
+.rbc-timeslot-group{
+    height: 1px;
+}
+/* Styles for DataGrid rows based on status */
+.row-pending {
+  background-color: #fff8e1; /* Warning yellow */
+  color: #ff9800;
+}
+
+.row-rejected {
+  background-color: #ffebee; /* Error red */
+  color: #f44336;
+}
+
+.row-approved {
+  background-color: #e3f2fd; /* Info blue */
+  color: #2196f3;
+}
+
+
+  
